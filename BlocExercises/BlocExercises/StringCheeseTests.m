@@ -74,5 +74,10 @@
     NSString *numberOfCheesesString = [self.stringCheese numberOfCheesesStringWithCheeseCount:1];
     XCTAssertEqualObjects(numberOfCheesesString, @"1 cheese", @"1 cheese should be returned");
 }
+/* ADDED BY JOE TEST NEEDED TO MAKE SURE THE INTEGER 0 IS COMPENSATED FOR */
+- (void)testThatTurningNumberZeroCheeseStringWorks {
+    NSString *numberOfCheesesString = [self.stringCheese numberOfCheesesStringWithCheeseCount:0];
+    XCTAssertEqualObjects(numberOfCheesesString, @"No Cheese here", @"0 cheese should be returned");
+}
 
 @end
