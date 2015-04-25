@@ -24,8 +24,10 @@
     NSMutableString *cheeseType = [cheeseName mutableCopy];
     NSRange cheeseRange = [cheeseType rangeOfString:@" cheese" options:NSCaseInsensitiveSearch];
     if (cheeseRange.location != NSNotFound) {
-    [cheeseType deleteCharactersInRange:cheeseRange];
-    } else {}
+        [cheeseType deleteCharactersInRange:cheeseRange];
+    } else {
+    
+    }
     return cheeseType;
     
 }
